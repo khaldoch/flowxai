@@ -1,73 +1,191 @@
-# Welcome to your Lovable project
+delete all lovalbe related🎙️ AI Voice Agents Controller
 
-## Project info
+A centralized controller dashboard for managing multiple AI voice agents and client interactions — built for an AI Voice Agents Agency freelance project.
 
-**URL**: https://lovable.dev/projects/f7b031a4-1fdc-479c-8b87-fd8b3cd3e214
+This application allows you to create, monitor, and manage multiple voice AI agents and coordinate communication between clients and agents seamlessly from one interface.
 
-## How can I edit this code?
+🚀 Features
 
-There are several ways of editing your application.
+🧠 Manage multiple AI voice agents (create, edit, or remove)
 
-**Use Lovable**
+💬 Route client interactions to specific agents
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f7b031a4-1fdc-479c-8b87-fd8b3cd3e214) and start prompting.
+🔧 Configure agent personalities, scripts, and voice models
 
-Changes made via Lovable will be committed automatically to this repo.
+📊 Real-time conversation monitoring dashboard
 
-**Use your preferred IDE**
+🌐 Built with React + TypeScript + Tailwind + shadcn-ui for performance and clean design
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Vite — Fast and modern build tool
 
-Follow these steps:
+React + TypeScript — Component-based frontend architecture
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+Tailwind CSS — Utility-first responsive styling
+
+shadcn/ui — Prebuilt, accessible, and elegant UI components
+
+⚙️ How to Run Locally
+
+Follow these steps to set up and run the project on your local machine:
+
+1️⃣ Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+2️⃣ Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+3️⃣ Install dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Make sure you have Node.js installed (recommended: use nvm
+):
+
+npm install
+
+4️⃣ Run the development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Your app will start on http://localhost:5173
+ (or the port shown in your terminal).
 
-**Use GitHub Codespaces**
+🧠 Project Purpose
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This application serves as a control center for a network of AI voice agents — each capable of handling different client interactions, tasks, or domains.
+It enables agencies or businesses to:
 
-## What technologies are used for this project?
+Manage and monitor multiple AI assistants in one place.
 
-This project is built with:
+Configure voice agent personalities and response logic.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Track client interactions and agent performance in real-time.
 
-## How can I deploy this project?
+🌍 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/f7b031a4-1fdc-479c-8b87-fd8b3cd3e214) and click on Share -> Publish.
+To deploy this project:
 
-## Can I connect a custom domain to my Lovable project?
+Build the app:
 
-Yes, you can!
+npm run build
+🎙️ AI Voice Agents Controller
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+A centralized controller dashboard for managing multiple AI voice agents and client interactions — built for an AI Voice Agents Agency freelance project.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This application allows you to create, monitor, and manage multiple voice AI agents and coordinate communication between clients and agents seamlessly from one interface.
+
+🚀 Features
+
+🧠 Manage multiple AI voice agents (create, edit, or remove)
+
+💬 Route client interactions to specific agents
+
+🔧 Configure agent personalities, scripts, and voice models
+
+📊 Real-time conversation monitoring dashboard
+
+🌐 Built with React + TypeScript + Tailwind + shadcn-ui for performance and clean design
+
+🛠️ Tech Stack
+
+Vite — Fast and modern build tool
+
+React + TypeScript — Component-based frontend architecture
+
+Tailwind CSS — Utility-first responsive styling
+
+shadcn/ui — Prebuilt, accessible, and elegant UI components
+
+⚙️ How to Run Locally
+
+Follow these steps to set up and run the project on your local machine:
+
+1️⃣ Clone the repository
+git clone <YOUR_GIT_URL>
+
+2️⃣ Navigate to the project directory
+cd <YOUR_PROJECT_NAME>
+
+3️⃣ Install dependencies
+
+Make sure you have Node.js installed (recommended: use nvm
+):
+
+npm install
+
+4️⃣ Run the development server
+npm run dev
+
+
+Your app will start on http://localhost:5173
+ (or the port shown in your terminal).
+
+🧠 Project Purpose
+
+This application serves as a control center for a network of AI voice agents — each capable of handling different client interactions, tasks, or domains.
+It enables agencies or businesses to:
+
+Manage and monitor multiple AI assistants in one place.
+
+Configure voice agent personalities and response logic.
+
+Track client interactions and agent performance in real-time.
+
+🌍 Deployment
+
+To deploy this project:
+
+Build the app:
+
+npm run build
+
+
+Preview the build (optional):
+
+npm run preview
+
+
+Deploy to your preferred hosting platform such as:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+Azure Static Web Apps
+
+👩‍💼 About
+
+This project is part of a freelance initiative for an AI Voice Agents Agency, designed to:
+
+Simplify multi-agent voice AI management.
+
+Provide a unified interface for communication and analytics.
+
+Enable rapid scaling of voice-based business automation.
+
+Preview the build (optional):
+
+npm run preview
+
+
+Deploy to your preferred hosting platform such as:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+Azure Static Web Apps
+
+👩‍💼 About
+
+This project is part of a freelance initiative for an AI Voice Agents Agency, designed to:
+
+Simplify multi-agent voice AI management.
+
+Provide a unified interface for communication and analytics.
+
+Enable rapid scaling of voice-based business automation.
