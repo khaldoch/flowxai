@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 240 10% 98%;
+    --foreground: 240 10% 9%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 9%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 9%;
+
+    /* Primary - Professional blue */
+    --primary: 224 76% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 224 100% 65%;
+
+    /* Secondary - Soft purple */
+    --secondary: 263 70% 95%;
+    --secondary-foreground: 263 70% 15%;
+
+    /* Muted colors */
+    --muted: 240 4% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    /* Accent - Analytics purple */
+    --accent: 263 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 48 96% 53%;
+    --warning-foreground: 240 10% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and input */
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 224 76% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-analytics: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 76% 46%));
+    --gradient-warning: linear-gradient(135deg, hsl(var(--warning)), hsl(48 96% 63%));
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(var(--primary) / 0.15);
+    --shadow-strong: 0 8px 32px -8px hsl(var(--primary) / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Analytics Card Styles */
+  .analytics-card {
+    @apply bg-gradient-to-br from-card to-card/80 border border-border/50 rounded-xl shadow-[var(--shadow-soft)] 
+           hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] backdrop-blur-sm;
+  }
+
+  .analytics-gradient {
+    @apply bg-[image:var(--gradient-analytics)] text-white;
+  }
+
+  .success-gradient {
+    @apply bg-[image:var(--gradient-success)] text-white;
+  }
+
+  .warning-gradient {
+    @apply bg-[image:var(--gradient-warning)] text-foreground;
+  }
+
+  /* Chart Styles */
+  .chart-container {
+    @apply analytics-card p-6;
+  }
+
+  /* Button Variants */
+  .btn-analytics {
+    @apply bg-[image:var(--gradient-analytics)] text-white hover:opacity-90 
+           transition-[var(--transition-smooth)] shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)];
+  }
+
+  /* Call Status Indicators */
+  .status-completed {
+    @apply bg-success/10 text-success border-success/20;
+  }
+
+  .status-failed {
+    @apply bg-destructive/10 text-destructive border-destructive/20;
+  }
+
+  .status-busy {
+    @apply bg-warning/10 text-warning-foreground border-warning/20;
+  }
+
+  .status-voicemail {
+    @apply bg-accent/10 text-accent border-accent/20;
+  }
+
+  /* Animation Classes */
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.4s ease-out;
+  }
+
+  .hover-lift {
+    @apply transition-[var(--transition-smooth)] hover:-translate-y-1 hover:shadow-[var(--shadow-medium)];
+  }
+}
+
+@layer utilities {
+  /* Keyframes */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: var(--gradient-analytics);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

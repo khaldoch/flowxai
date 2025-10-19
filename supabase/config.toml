@@ -1,0 +1,5 @@
+
+project_id = "afpuocoytmrnqsalsqzt"
+
+[functions.call-reports]
+verify_jwt = false
