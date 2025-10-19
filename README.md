@@ -1,4 +1,4 @@
-delete all lovalbe related🎙️ AI Voice Agents Controller
+🎙️ AI Voice Agents Controller
 
 A centralized controller dashboard for managing multiple AI voice agents and client interactions — built for an AI Voice Agents Agency freelance project.
 
